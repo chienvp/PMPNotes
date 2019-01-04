@@ -1,0 +1,226 @@
+body {
+  background: #fff;
+  font-family:"Helvetica Neue,Helvetica,Arial,sans-serif";
+  color: #29303b;
+  line-height:1.30;
+  font-size:20px;
+  text-align:left;
+}
+@media only screen and (min-width: 992px) {
+    .quiz-container {
+		padding: 0.25em;
+		max-width: 800px;
+		margin: 1em auto;
+	}
+	.question {
+		font-size:22px;
+	}
+	#quiz-results-screen{
+		text-align: center;
+		font-size: 30x;
+	}
+}
+h1 {
+  color: #CA6F1E;
+  text-align: center;
+}
+.faded {
+  color: #777;
+}
+#quiz-counter {
+  background:#e6ee9c;
+  padding:10px;
+  font-size:26px
+}
+
+.quiz-container a {
+    text-decoration: none;
+    background: #F4F6F6;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-counter {
+    text-align: center;
+	font-size: 22x;
+}
+
+
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers a {
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+	color: #29303b;
+}
+
+.answers a.correct {
+    background: #52BE80;
+}
+.answers a.incorrect {
+    background: #1B2631;
+}
+a.visited{
+	text-decoration:none;
+}
+.answers a.correct,
+.answers a.incorrect {
+    color: #fff;
+}
+
+#quiz-controls {
+    background: #D5DBDB;
+    color: #111;
+    padding: 0.25em 0.5em 0.5em;
+    text-align: center;
+}
+
+#quiz-response {
+	text-align:left;
+}
+#quiz-results {
+    font-size: 15px;
+}
+#quiz-form {
+	padding:15px;
+}
+#quiz-buttons a,
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #C0392B;
+    color: #fff;
+}
+#quiz-buttons a {
+
+}
+
+.clip-text {
+	margin-left:288px;
+}
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+    background: none;
+    padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+	background: #C0392B;
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    .quiz-container {
+		padding: 15px;
+		max-width: 799px;
+	}
+	.question {
+		font-size:20px;
+	}
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form header {
+  margin: 0 0 20px 0; 
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
